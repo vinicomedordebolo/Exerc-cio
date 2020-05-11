@@ -1,4 +1,3 @@
-pacote com.exemple.agendario;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

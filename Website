@@ -1,3 +1,5 @@
+pacote com.exemple.agendario;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.room.ColumnInfo;
@@ -7,6 +9,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "websites")
 
+     public class Website {
 
     @PrimaryKey(autoGenerate = true)
     @NonNull
@@ -15,15 +18,15 @@ import androidx.room.PrimaryKey;
 
     @Nullable
     @ColumnInfo(name = "webName")
-    private String mName;
+    private String mUrl;
 
-    private String mStyle;
+    private String mTopic;
 
     public Website(@Nullable String url, String topic, int grade, String creationDate) {
-        wName = url;
-        wStyle = topic;
-        wScore = grade;
-        wCreationDate = creationDate;
+        mName = url;
+        mStyle = topic;
+        mScore = grade;
+        mCreationDate = creationDate;
     }
 
     public int getId() {
@@ -55,7 +58,7 @@ import androidx.room.PrimaryKey;
     }
 
     public void setGrade(int grade) {
-        wGrade = grade;
+        mGrade = grade;
     }
 
     public String getCreationDate() {

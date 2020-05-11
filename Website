@@ -16,7 +16,7 @@ import androidx.room.PrimaryKey;
     private int mId;
 
     @Nullable
-    @ColumnInfo(name = "webName")
+    @ColumnInfo(name = "webUrl")
     private String mUrl;
 
     private String mTopic;
